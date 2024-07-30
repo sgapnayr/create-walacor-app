@@ -4,7 +4,7 @@
 
 🚀 CLI tool to create a Next.js project connected to Walacor database 🌐
 
-[https://www.npmjs.com/package/create-walacor-app?activeTab=readme](CLI-Tool)
+[CLI-Tool](https://www.npmjs.com/package/create-walacor-app?activeTab=readme)
 
 ## Description
 
