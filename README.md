@@ -4,6 +4,8 @@
 
 🚀 CLI tool to create a Next.js project connected to Walacor database 🌐
 
+[https://www.npmjs.com/package/create-walacor-app?activeTab=readme](CLI-Tool)
+
 ## Description
 
 `create-walacor-app` is a command-line tool that helps you quickly set up a new Next.js project configured with various optional tools like ESLint, Prettier, Playwright, and CI/CD pipelines.
@@ -137,4 +139,5 @@ MIT License
 ## Connect with Us
 
 [LinkedIn](https://www.linkedin.com/company/walacor/)
+
 # create-walacor-app
