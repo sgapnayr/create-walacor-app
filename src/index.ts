@@ -106,14 +106,14 @@ program
       if (eslint) {
         packageJson.scripts["lint"] = "next lint";
         packageJson.scripts["lint:fix"] = "next lint --fix";
-        packageJson.devDependencies["eslint"] = "^8.44.0";
-        packageJson.devDependencies["eslint-config-next"] = "^14.2.5";
+        packageJson.devDependencies["eslint"] = "^8.44.0"; // Add latest version
+        packageJson.devDependencies["eslint-config-next"] = "^14.2.5"; // Add latest version
       }
 
       if (playwright) {
         packageJson.scripts["test:e2e"] = "playwright test";
-        packageJson.devDependencies["playwright"] = "^1.45.3";
-        packageJson.devDependencies["@playwright/test"] = "^1.45.3";
+        packageJson.devDependencies["playwright"] = "^1.45.3"; // Add latest version
+        packageJson.devDependencies["@playwright/test"] = "^1.45.3"; // Add latest version
       }
 
       packageJson.scripts["type-check"] = "tsc --noEmit";
