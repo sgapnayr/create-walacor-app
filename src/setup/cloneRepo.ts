@@ -1,14 +1,29 @@
-import { execSync } from "child_process";
+import { simpleGit, SimpleGit } from "simple-git";
 import * as path from "path";
 import { yellow } from "colorette";
+import fs from "fs-extra";
 
-export function cloneRepo(projectPath: string, templateRepo: string): void {
-  console.log("");
-  console.log(yellow("🔄 Cloning the repository..."));
-  console.log("");
-  execSync(`git clone ${templateRepo} ${projectPath} > /dev/null 2>&1`);
-  console.log("");
-  console.log(yellow("🧹 Cleaning up..."));
-  execSync(`rm -rf ${path.join(projectPath, ".git")}`);
-  console.log("");
+export async function cloneRepo(
+  projectPath: string,
+  templateRepo: string
+): Promise<void> {
+  const git: SimpleGit = simpleGit();
+
+  try {
+    console.log("");
+    console.log(yellow("🔄 Cloning the repository..."));
+    console.log("");
+
+    await git.clone(templateRepo, projectPath);
+
+    console.log("");
+    console.log(yellow("🧹 Cleaning up..."));
+
+    // Remove the .git directory
+    await fs.remove(path.join(projectPath, ".git"));
+
+    console.log("");
+  } catch (error) {
+    console.error("Failed to clone repository: ", error);
+  }
 }

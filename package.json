@@ -1,6 +1,6 @@
 {
   "name": "create-walacor-app",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -17,9 +17,12 @@
   "dependencies": {
     "colorette": "^2.0.20",
     "commander": "^8.3.0",
-    "prompts": "^2.4.2"
+    "fs-extra": "^11.2.0",
+    "prompts": "^2.4.2",
+    "simple-git": "^3.25.0"
   },
   "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.3.1",
     "@types/prompts": "^2.4.9",
     "typescript": "^5.0.0"
