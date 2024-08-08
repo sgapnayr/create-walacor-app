@@ -115,6 +115,35 @@ Your project is now ready and running at http://localhost:3000
 ------------------------------------------------------
 ```
 
+## Environment Variables
+
+To run the project, you will need to create a `.env` file with the following keys (replace with your own values):
+
+### Walacor
+
+```
+NEXT_PUBLIC_EC2_WALACOR="YOUR_EC2_INSTANCE_IPV4"
+NEXT_PUBLIC_WALACOR_BLOG_ETID="YOUR_SCHEMA_ETID"
+NEXT_PUBLIC_WALACOR_USERNAME="YOUR_USERNAME"
+NEXT_PUBLIC_WALACOR_PASSWORD="YOUR_PASSWORD"
+```
+
+### ThirdWeb
+
+```
+NEXT_PUBLIC_THIRDWEB_CLIENT_ID="YOUR_CLIENT_ID"
+NEXT_PUBLIC_THIRDWEB_SECRET_KEY="YOUR_SECRET"
+```
+
+### AWS
+
+```
+NEXT_PUBLIC_AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID"
+NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY"
+NEXT_PUBLIC_AWS_REGION="YOUR_REGION"
+NEXT_PUBLIC_AWS_S3_BUCKET="YOUR_BUCKET"
+```
+
 ## TypeScript
 
 This package is written in TypeScript, ensuring type safety and better code quality. The TypeScript code is compiled to JavaScript for execution.
@@ -139,5 +168,3 @@ MIT License
 ## Connect with Us
 
 [LinkedIn](https://www.linkedin.com/company/walacor/)
-
-# create-walacor-app
