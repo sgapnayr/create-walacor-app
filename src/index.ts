@@ -34,7 +34,7 @@ program
   .argument("<project-name>", "name of the project")
   .action(async (projectName: string) => {
     const projectPath = path.join(process.cwd(), projectName);
-    const templateRepo = "https://github.com/sgapnayr/walacor-template";
+    const templateRepo = "https://github.com/walacor/typescript-sdk";
 
     const questions: PromptObject[] = [
       {
@@ -106,14 +106,14 @@ program
       if (eslint) {
         packageJson.scripts["lint"] = "next lint";
         packageJson.scripts["lint:fix"] = "next lint --fix";
-        packageJson.devDependencies["eslint"] = "^8.44.0"; // Add latest version
-        packageJson.devDependencies["eslint-config-next"] = "^14.2.5"; // Add latest version
+        packageJson.devDependencies["eslint"] = "^8.44.0";
+        packageJson.devDependencies["eslint-config-next"] = "^14.2.5";
       }
 
       if (playwright) {
         packageJson.scripts["test:e2e"] = "playwright test";
-        packageJson.devDependencies["playwright"] = "^1.45.3"; // Add latest version
-        packageJson.devDependencies["@playwright/test"] = "^1.45.3"; // Add latest version
+        packageJson.devDependencies["playwright"] = "^1.45.3";
+        packageJson.devDependencies["@playwright/test"] = "^1.45.3";
       }
 
       packageJson.scripts["type-check"] = "tsc --noEmit";
