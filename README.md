@@ -2,6 +2,10 @@
 
 <img src="https://api.surveyjs.io/private/Surveys/files?name=3aa2c82a-85dd-4c4b-9dc8-3238187270c7" alt="Walacor Logo" width="125">
 
+### This Package Is The CLI Tool For The TypeScript SDK
+
+[Official Youtube Video Series](https://www.youtube.com/playlist?list=PLSJRPsv_pgiY745Ki1bL9MYBuNaiApwdW)
+
 🚀 CLI tool to create a Next.js project connected to Walacor database 🌐
 
 [CLI-Tool](https://www.npmjs.com/package/create-walacor-app?activeTab=readme)
