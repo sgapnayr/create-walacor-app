@@ -1,6 +1,5 @@
 # create-walacor-app
 
-
 ### This Package Is The CLI Tool For The TypeScript SDK
 
 [Official Youtube Video Series](https://www.youtube.com/playlist?list=PLSJRPsv_pgiY745Ki1bL9MYBuNaiApwdW)
