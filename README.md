@@ -1,6 +1,5 @@
 # create-walacor-app
 
-<img src="https://api.surveyjs.io/private/Surveys/files?name=3aa2c82a-85dd-4c4b-9dc8-3238187270c7" alt="Walacor Logo" width="125">
 
 ### This Package Is The CLI Tool For The TypeScript SDK
 
